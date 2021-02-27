@@ -1,13 +1,22 @@
 init -990 python in mas_submod_utils:
-    Submod(
+    panic_submod = Submod(
         author="bob_brick",
         name="Panic Button",
         description="This submod adds the panic button for quick exits. Press Q to trigger the panic button.",
-        version="1.0",
+        version="1.1",
         dependencies={},
         settings_pane=None,
         version_updates={}
     )
+init -989 python:
+    import store
+    
+    if store.mas_submod_utils.isSubmodInstalled("Submod Updater Plugin"):
+        store.sup_utils.SubmodUpdater(
+            submod="store.mas_submod_utils.panic_submod",
+            user_name="CoolioColophon",
+            repository_name="MAS-Panic-Button-Submod"
+        )
 
 init -1 python in mas_greetings:
     import store

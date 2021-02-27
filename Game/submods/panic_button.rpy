@@ -8,13 +8,6 @@ init -990 python in mas_submod_utils:
         settings_pane=None,
         version_updates={}
     )
-init -989 python:
-    if store.mas_submod_utils.isSubmodInstalled("Submod Updater Plugin"):
-        store.sup_utils.SubmodUpdater(
-            submod="Panic Button",
-            user_name="CoolioColophon",
-            repository_name="MAS-Panic-Button-Submod"
-        )
 
 init -1 python in mas_greetings:
     import store

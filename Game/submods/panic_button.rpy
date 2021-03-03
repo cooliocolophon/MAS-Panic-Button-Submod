@@ -3,7 +3,7 @@ init -990 python in mas_submod_utils:
         author="bob_brick",
         name="Panic Button",
         description="This submod adds the panic button for quick exits. Press Q to trigger the panic button.",
-        version="1.1",
+        version="1.2",
         dependencies={},
         settings_pane=None,
         version_updates={}

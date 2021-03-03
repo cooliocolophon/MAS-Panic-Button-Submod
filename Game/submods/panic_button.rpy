@@ -15,6 +15,7 @@ init -989 python:
         store.sup_utils.SubmodUpdater(
             submod="store.mas_submod_utils.panic_submod",
             user_name="CoolioColophon",
+            tag_formatter=lambda x: x[x.index('_') + 1:],
             repository_name="MAS-Panic-Button-Submod"
         )
 
